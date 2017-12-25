@@ -1,6 +1,6 @@
 # MovieApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
+Angular 4 - Redux project for diplaying the most popular movies based on https://www.themoviedb.org
 
 ## Live Example
 
