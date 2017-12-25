@@ -1,0 +1,64 @@
+@mixin flex-block() {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex-inline() {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+
+@mixin flex-flow($direction: row, $wrap: nowrap) {
+  -moz-flex-flow: $direction $wrap;
+  -ms-flex-direction: $direction;
+  -ms-flex-wrap: $wrap;
+  -webkit-flex-flow: $direction $wrap;
+  flex-flow: $direction $wrap;
+}
+@mixin align-content($alignment) {
+  -moz-align-content: $alignment;
+  -ms-align-content: $alignment;
+  -webkit-align-content: $alignment;
+  align-content: $alignment;
+}
+@mixin flex-direction($direction: row) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+@mixin flex-wrap($wrap: nowrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+@mixin justify-content($justification) {
+  -webkit-box-pack: $justification;
+  -moz-box-pack: $justification;
+  -webkit-justify-content: $justification;
+  justify-content: $justification;
+}
+@mixin align-items($mode) {
+  -webkit-box-align: $mode;
+  -moz-box-align: $mode;
+  -ms-flex-align: $mode;
+  -webkit-align-items: $mode;
+  align-items: $mode;
+}
+@mixin flex($args: none) {
+  -moz-flex: $args;
+  -ms-flex: $args;
+  -webkit-flex: $args;
+  flex: $args;
+
+}
+
+@mixin animate() {
+  transition: all 4.3s ease-out;
+  -webkit-transition: all 4.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}

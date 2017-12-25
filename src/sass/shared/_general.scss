@@ -1,0 +1,260 @@
+.bg-transparent{
+  background-color : transparent !important;
+}
+
+.bg-white{
+  background-color: #fff !important;
+}
+
+.pointer{
+  cursor : pointer;
+}
+
+.text-white{
+  color : #fff !important;
+}
+
+.border-none{
+  border: none !important;
+}
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position : absolute;
+}
+
+.display-none{
+  display: none !important;
+}
+
+.clear{
+  clear: both !important;
+}
+
+.word-break{
+  word-wrap: break-word !important;
+}
+
+.float-right{
+  float: right !important;
+}
+
+.float-left{
+  float: left !important;
+}
+
+.vertical-center{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.horizontal-vertical-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform:translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  -o-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%);
+}
+
+.block {
+  display: block !important;
+}
+
+.inline {
+  display: inline!important;
+}
+
+.inline-block {
+  display: inline-block!important;
+}
+
+.text-center{
+	text-align : center !important;
+}
+
+.text-left {
+  text-align: left!important;
+}
+
+.text-right {
+  text-align: right!important;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.p-0{
+	padding : 0 !important;
+}
+
+.m-0{
+	margin : 0 !important;
+}
+
+.animated {
+  //@include animation-duration(.5s);
+}
+
+.animated-cubic{
+  //@include animation-duration(.5s);
+}
+
+$step : 5;
+$step2 : 1;
+
+@for $i from 0 through 1000{
+
+  .w-#{$i*$step2}{
+    width: #{$i*$step2}px !important;
+  }
+
+  .w-#{$i*$step2}per{
+    width: #{$i*$step2}% !important;
+  }
+
+  .h-#{$i*$step2}per{
+    height: #{$i*$step2}% !important;
+  }
+
+  .max-w-#{$i*$step2}{
+    max-width: #{$i*$step2}px !important;
+  }
+
+  .min-w-#{$i*$step2}{
+    min-width: #{$i*$step2}px !important;
+  }
+
+  .h-#{$i*$step2}{
+    height: #{$i*$step2}px !important;
+  }
+
+  .max-h-#{$i*$step2}{
+    max-height: #{$i*$step2}px !important;
+  }
+
+  .min-h-#{$i*$step2}{
+    min-height: #{$i*$step2}px !important;
+  }
+
+  .wh-#{$i*$step}{
+    width: #{$i*$step}px !important;
+    height: #{$i*$step}px !important;
+  }
+
+  .mr-#{$i*$step2}{
+    margin-right: #{$i*$step2}px !important;
+  }
+
+  .mt-#{$i*$step2}{
+    margin-top: #{$i*$step2}px !important;
+  }
+
+  .ml-#{$i*$step2}{
+    margin-left: #{$i*$step2}px !important;
+  }
+
+  .mb-#{$i*$step2}{
+    margin-bottom: #{$i*$step2}px !important;
+  }
+
+  .pr-#{$i*$step2}{
+    padding-right: #{$i*$step2}px !important;
+  }
+
+  .pl-#{$i*$step2}{
+    padding-left: #{$i*$step2}px !important;
+  }
+
+  .pt-#{$i*$step2}{
+    padding-top: #{$i*$step2}px !important;
+  }
+
+  .pb-#{$i*$step2}{
+    padding-bottom: #{$i*$step2}px !important;
+  }
+
+  .p-#{$i*$step2}{
+    padding: #{$i*$step2}px !important;
+  }
+
+  .fs-#{$i}{
+    font-size: #{$i}px !important;
+  }
+
+  .mt-#{$i*$step2}per{
+    margin-top: #{$i*$step2}% !important;
+  }
+
+  .mb-#{$i*$step2}per{
+    margin-bottom: #{$i*$step2}% !important;
+  }
+
+  .mr-#{$i*$step2}per{
+    margin-right: #{$i*$step2}% !important;
+  }
+
+  .ml-#{$i*$step2}per{
+    margin-left: #{$i*$step2}% !important;
+  }
+
+  .pt-#{$i*$step2}per{
+    padding-top: #{$i*$step2}% !important;
+  }
+
+  .pr-#{$i*$step2}per{
+    padding-right: #{$i*$step2}% !important;
+  }
+
+  .pl-#{$i*$step2}per{
+    padding-left: #{$i*$step2}% !important;
+  }
+
+  .pb-#{$i*$step2}per{
+    padding-bottom: #{$i*$step2}% !important;
+  }
+
+  .line-height-#{$i*$step2}{
+    line-height: #{$i*$step2}px !important;
+  }
+
+}
+
+@for $x from 0 through 100{
+
+  @for $y from 0 through 100{
+    .horizontal-vertical-center-top-left-#{$x*$step2}-#{$y*$step2}{
+      position: absolute;
+      top: #{$x*$step2}% !important;
+      left: #{$y*$step2}% !important;
+      -webkit-transform: translate(#{-($y*$step2)+'%'},#{-($x*$step2)+'%'});
+      -moz-transform: translate(#{-($y*$step2)+'%'},#{-($x*$step2)+'%'});
+      -ms-transform: translate(#{-($y*$step2)+'%'},#{-($x*$step2)+'%'});
+      -o-transform: translate(#{-($y*$step2)+'%'},#{-($x*$step2)+'%'});
+      transform: translate(#{-($y*$step2)+'%'},#{-($x*$step2)+'%'});
+    }
+
+  }
+
+}
+
+$stepLine : 0;
+
+@for $j from 0 through 50{
+
+  .lh-#{$stepLine+($j/10)}{
+    line-height : #{$stepLine+($j/10)};
+  }
+
+}

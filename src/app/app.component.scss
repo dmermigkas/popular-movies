@@ -1,0 +1,15 @@
+@import "../sass/shared/colors";
+@import "../sass/shared/functions";
+
+main{
+
+  display: block;
+  height: 100%;
+  position: relative;
+
+}
+
+.box{
+  background: #fff;
+  padding: 20px;
+}

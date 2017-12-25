@@ -1,0 +1,21 @@
+<h1 class="title">Movie Viewer</h1>
+
+<div class="movies-wrapper">
+
+  <section class="col-sm-4 p-0">
+    <app-movie-list [movies]="movies | async"
+                    (selectMovie)="onMovieSelected($event)">
+    </app-movie-list>
+  </section>
+
+  <section class="col-sm-8 movie-details">
+    <app-movie-details
+      [movie]="selectedMovie | async">
+    </app-movie-details>
+  </section>
+
+</div>
+
+
+
+

@@ -1,0 +1,17 @@
+<div *ngIf="movie">
+
+  <section class="movie-details h-400 littleFadeInUp animated">
+
+    <div class="h-300 w-300 image fittedBackground" [style.background-image]="getImage(movie.poster_path)"></div>
+
+    <div class="description-ratings-wrapper">
+
+      <p class="overview">{{overview}}</p>
+
+      <star-rating-comp class="" [starType]="'svg'" [showHalfStars]="true" [numOfStars]="10" [rating]="+movie.vote_average"></star-rating-comp>
+
+    </div>
+
+  </section>
+
+</div>

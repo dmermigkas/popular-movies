@@ -1,0 +1,21 @@
+@import "../../sass/shared/mixins";
+@import "../../sass/shared/colors";
+@import "../../sass/shared/functions";
+
+.movie-details{
+  @include flex-block();
+  @include animate();
+
+  p.overview{
+    max-width: 300px;
+    color: getColor(baseColor);
+  }
+
+  .description-ratings-wrapper{
+    @include flex-block();
+    @include flex-direction(column);
+  }
+
+}
+
+

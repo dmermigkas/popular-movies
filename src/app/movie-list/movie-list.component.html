@@ -1,0 +1,23 @@
+<div *ngIf="movies">
+
+  <section class="movie-list">
+
+    <mat-list>
+
+      <mat-list-item class="mb-30 pointer" *ngFor="let movie of movies | sortByRating" (click)="setActiveMovieAndEmit(movie)">
+
+        <mat-card class="w-100per card" [class.selected]="movie === selectedMovie">
+          <h4>
+            {{movie.title}}
+          </h4>
+          <i class="fa fa-arrow-right" [class.hidden]="movie != selectedMovie" aria-hidden="true"></i>
+
+        </mat-card>
+
+      </mat-list-item>
+
+    </mat-list>
+
+  </section>
+
+</div>
