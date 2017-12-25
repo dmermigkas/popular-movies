@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Live Example
 
+Production build with AOT
+
 https://popular-movies.herokuapp.com/movies
 
 ## Development server
